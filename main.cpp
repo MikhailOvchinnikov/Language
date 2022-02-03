@@ -19,5 +19,5 @@ int main()
 	GetParametersFile(file, text, syms);
 
 	fclose(file);
-    printf("%d\n", GetG(text));
+	printf("%f\n", GetG(text));
 }

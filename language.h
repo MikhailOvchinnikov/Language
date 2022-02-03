@@ -1,15 +1,34 @@
 #pragma once
 
+
+enum ElemType {
+	NUM = 1,
+	OP = 2
+};
+
+
 void SyntaxError();
 
-int GetN();
+float F(char* t_func);
 
-int GetP();
+float St();
 
-int GetT();
+float If();
 
-int GetE();
+float As();
 
-int GetG(const char* str);
+float V(char* var);
+
+Element* GetN();
+
+float GetW(char* var);
+
+float GetP();
+
+Element* GetT();
+
+float GetE();
+
+float GetG(const char* str);
 
 void Require(const char sym);
